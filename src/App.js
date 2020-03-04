@@ -9,6 +9,8 @@ export default function App() {
     <div className="App">
       <h1>Rubrik</h1>
       <h2>Underrubrik</h2>
+      <p>ändring </p>
+      <p>nu är jag inte med </p>
     </div>
   );
 }
