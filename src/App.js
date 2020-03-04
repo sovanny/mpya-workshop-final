@@ -7,10 +7,15 @@ export default function App() {
   return (
     // Skriv "HTML" (JSX) här
     <div className="App">
-      <h1>Rubrik</h1>
-      <h2>Underrubrik</h2>
-      <p>ändring </p>
-      <p>nu är jag inte med </p>
+      <h1>Currency Xchange Deluxe</h1>
+      <h3>Let us do the math</h3>
+      <hr />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
     </div>
   );
 }

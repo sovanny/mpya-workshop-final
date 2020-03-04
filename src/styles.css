@@ -1,4 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Nunito&display=swap");
+
+body {
+  background-color: #b7a99a;
+  display: flex;
+  justify-content: center;
+}
+
 .App {
   font-family: sans-serif;
-  text-align: center;
+  color: #fff;
+  width: 450px;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+}
+h3 {
+  font-family: "Merriweather", serif;
+  color: rgb(230, 230, 230);
 }
