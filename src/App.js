@@ -7,7 +7,15 @@ export default function App() {
   return (
     // Skriv "HTML" (JSX) här
     <div className="App">
-      <h1>Currency Xchange Deluxe</h1>
+      <h1>
+        <span role="img" aria-label="curry">
+          🍛
+        </span>
+        Curryncy
+        <span role="img" aria-label="curry">
+          🍛
+        </span>
+      </h1>
       <h3>Let us do the math</h3>
       <hr />
       <p>
@@ -16,6 +24,20 @@ export default function App() {
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </p>
+      <div>
+        <label>
+          SEK:
+          <input value="0" />
+        </label>
+        EUR: 0€
+      </div>
+      <div>
+        <label>
+          EUR:
+          <input value="0" />
+        </label>
+        SEK: 0kr
+      </div>
     </div>
   );
 }
