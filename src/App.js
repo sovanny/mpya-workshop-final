@@ -1,21 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 
 export default function App() {
-  // Skriv JavaScript här
+  const [eurValue, setEuroValue] = useState(0);
+
+  const rateSekToEur = 0.095;
+  const rateEurToSek = 10.57;
+
+  function handleInputSek(event) {
+    let sek = event.target.value;
+    let eur = sek * rateSekToEur;
+    setEuroValue(eur);
+  }
 
   return (
     // Skriv "HTML" (JSX) här
     <div className="App">
-      <h1>
-        <span role="img" aria-label="curry">
-          🍛
-        </span>
-        Curryncy
-        <span role="img" aria-label="curry">
-          🍛
-        </span>
-      </h1>
+      <h1>🍛 Curryncy 🍛</h1>
       <h3>Let us do the math</h3>
       <hr />
       <p>
@@ -27,16 +28,9 @@ export default function App() {
       <div>
         <label>
           SEK:
-          <input value="0" />
+          <input onChange={handleInputSek} />
         </label>
-        EUR: 0€
-      </div>
-      <div>
-        <label>
-          EUR:
-          <input value="0" />
-        </label>
-        SEK: 0kr
+        <span>EUR: {eurValue.toFixed(2)}€ </span>
       </div>
     </div>
   );
