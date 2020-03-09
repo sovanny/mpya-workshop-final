@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito|Pacifico&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
 body {
   background-color: #b7a99a;
   display: flex;
@@ -8,19 +8,58 @@ body {
 
 .App {
   font-family: sans-serif;
-  color: #ffffff;
+  color: #ede8f0;
   width: 450px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 h1 {
   font-family: "Pacifico", serif;
-  font-size: 3.2rem;
+  font-size: 3.2em;
+  color: #ffc72c;
 }
-h3 {
-  color: #f0f0f0;
+h2 {
+  font-size: 1.75em;
+  color: #e24585;
+  font-weight: 700;
 }
 
-p {
-  color: #f5f5f5;
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 1.4em;
+}
+
+.conversion {
+  font-size: 1.75em;
+  font-weight: 700;
+  margin-bottom: 0.7em;
+  margin-top: 0.7em;
+  display: flex;
+  color: #e24585;
+}
+
+.conversion__input {
+  width: 205px;
+}
+hr {
+  margin: 0;
+  width: 245px;
+  border-color: #f99fc9;
+  border-style: solid;
+}
+input {
+  background-color: #ede8f0;
+
+  border: none;
+  border-bottom: 1px solid #ede8f0;
+  background: transparent;
+  margin-left: 5px;
+  border-radius: 3px;
+  font: inherit;
+  width: 100px;
+  color: #ffc72c;
+}
+
+.pink {
+  color: #ffc72c;
 }
