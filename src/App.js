@@ -4,25 +4,25 @@ import "./styles.css";
 export default function App() {
   const [eurValue, setEurValue] = useState(0);
   const [sekValue, setSekValue] = useState(0);
-  const [rateSekToEur, setRateSekToEur] = useState(0);
+  const [rate, setRate] = useState(0);
 
   useEffect(() => {
     fetch("https://api.exchangeratesapi.io/latest")
       .then(response => response.json())
-      .then(data => setRateSekToEur(data.rates.SEK))
+      .then(data => setRate(data.rates.SEK))
       .catch(console.log);
   }, []);
 
-  function handleInputSek(event) {
-    let sek = event.target.value;
-    let eur = sek * rateSekToEur;
-    setEurValue(eur);
-  }
-
   function handleInputEur(event) {
     let eur = event.target.value;
-    let sek = (eur * 1) / rateSekToEur;
+    let sek = rate * eur;
     setSekValue(sek);
+  }
+
+  function handleInputSek(event) {
+    let sek = event.target.value;
+    let eur = (1 / rate) * sek;
+    setEurValue(eur);
   }
 
   return (
