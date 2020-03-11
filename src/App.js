@@ -29,7 +29,7 @@ export default function App() {
     // Skriv "HTML" (JSX) här
     <div className="App">
       <h1>🍛 Curryncy 🍛</h1>
-      <h2>Let us do the math.</h2>
+      <h2 className="pink">Let us do the math.</h2>
       <hr className="hr--short" />
       <p className="description">
         It's all 'bout the money , It's all 'bout the dun dun do do do dumb.
